@@ -25,6 +25,12 @@ module.exports = (api) => {
             '@babel/typescript',
         ],
         plugins: [
+            [
+                '@babel/plugin-transform-react-jsx',
+                {
+                    runtime: 'automatic',
+                },
+            ],
             '@babel/proposal-object-rest-spread',
             '@babel/proposal-class-properties',
             '@babel/proposal-optional-chaining',
